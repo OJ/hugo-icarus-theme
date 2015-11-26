@@ -13,6 +13,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
+
+{{ if .Site.Params.widgets.mathjax }}
 {{ "<!-- MathJax -->" | safeHTML }}
 <script type="text/javascript"
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
@@ -41,3 +43,4 @@ MathJax.Hub.Config({
     }
 });
 </script>
+{{ end }}

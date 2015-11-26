@@ -903,7 +903,7 @@ a.article-title:hover {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.4em;
   margin: 1.6em 20px;
-  text-align: center;
+  text-align: left;
 }
 .article-entry blockquote footer {
   font-size: 14px;
@@ -1744,6 +1744,66 @@ pre .javascript .function {
 .widget ol:not(#recent-post) li a:hover:before {
   color: #333;
 }
+
+.non-widget {
+  padding: 15px 5px;
+}
+.non-widget a {
+  color: #777;
+  text-decoration: none;
+}
+.non-widget a:hover {
+  color: #333;
+}
+.non-widget ul ul,
+.non-widget ol ul,
+.non-widget dl ul,
+.non-widget ul ol,
+.non-widget ol ol,
+.non-widget dl ol,
+.non-widget ul dl,
+.non-widget ol dl,
+.non-widget dl dl {
+  margin-left: 15px;
+  list-style: disc;
+}
+.non-widget ul,
+.non-widget ol {
+  list-style: none;
+}
+.non-widget ul li,
+.non-widget ol li,
+.non-widget ul .category-list-child,
+.non-widget ol .category-list-child {
+  padding: 10px 0;
+  font-size: 14px;
+  border-bottom: 1px solid border-color;
+}
+.non-widget ul li a,
+.non-widget ol li a,
+.non-widget ul .category-list-child a,
+.non-widget ol .category-list-child a {
+  color: #777;
+}
+.non-widget ul ul,
+.non-widget ol ul,
+.non-widget ul ol,
+.non-widget ol ol {
+  list-style: none;
+}
+.non-widget ul ul li,
+.non-widget ol ul li,
+.non-widget ul ol li,
+.non-widget ol ol li {
+  border: none;
+}
+.non-widget ul ul li:last-child,
+.non-widget ol ul li:last-child,
+.non-widget ul ol li:last-child,
+.non-widget ol ol li:last-child {
+  padding-bottom: 0px;
+}
+
 #toTop {
   cursor: pointer;
   text-align: center;

@@ -4,7 +4,11 @@
         {{with .Site.Data.l10n.widgets.recent_articles.title}}{{.}}{{end}}
     </h3>
     <div class="widget">
+        {{ if .Site.Params.widgets.recent_thumbnails }}
         <ul id="recent-post">
+        {{ else }}
+        <ul id="recent-post" class="no-thumbnail">
+        {{ end }}
             {{ range first 5 (where .Site.Pages "Type" "post") }}
             <li>
                 {{ with .Params.banner }}
